@@ -1,9 +1,10 @@
 def my_collect(collection)
     i = 0
-    test = []
+    arr = []
     while i < collection.size
       test = yield(collection[i])
       i = i + 1
-      puts test
+      arr.push(test)
     end
+    arr
 end
