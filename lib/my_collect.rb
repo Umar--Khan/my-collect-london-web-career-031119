@@ -4,8 +4,8 @@ def my_collect(collection)
     arr = []
     while i < collection.size
     yield(collection[i])
-    arr.push collection[i]
+    #arr.push collection[i]
     i += 1
     end
-  arr
+  collection
 end
